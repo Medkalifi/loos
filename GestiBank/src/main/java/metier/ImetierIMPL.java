@@ -33,17 +33,16 @@ public class ImetierIMPL {
 		dao.closeCurrentSessionwithTransaction();
 	}
 
-	public Client findById(String id) {
+	public Client findById(Long id) {
 		dao.openCurrentSession();
 		Client client = dao.findById(id);
 		dao.closeCurrentSession();
 		return client;
 	}
 
-	public void delete(String id) {
+	public void delete(Client c) {
 		dao.openCurrentSessionwithTransaction();
-		Client client = dao.findById(id);
-		dao.delete(client);
+		dao.delete(c);
 		dao.closeCurrentSessionwithTransaction();
 	}
 

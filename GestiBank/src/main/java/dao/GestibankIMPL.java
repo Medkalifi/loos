@@ -86,7 +86,7 @@ private Transaction currentTransaction;
 	}
 
 	@Override
-	public Client findById(String id) {
+	public Client findById(Long id) {
 		Client client = (Client) getCurrentSession().get(Client.class, id);
 		return client; 
 	}

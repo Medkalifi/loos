@@ -48,7 +48,7 @@ public class Client extends Utilisateur {
 	
 	
 	public Client(String nom, String prenom, String mdp, String email, String adresse, String telephone, String sm,
-			int enfant, double salaire) {
+		int enfant, double salaire) {
 		super(nom, prenom, mdp, email, adresse);
 		this.telephone = telephone;
 		this.sm = sm;

@@ -8,14 +8,7 @@ import javax.persistence.Id;
 
 //import com.mysql.cj.protocol.Message;
 
-import entities.Administrateur;
-import entities.Agent;
-import entities.Client;
-import entities.Compte;
-import entities.Demande;
-import entities.Document;
-import entities.Transaction;
-import entities.Utilisateur;
+
 
 public interface IgestiBankDao<T, Id extends Serializable> {
 
@@ -23,7 +16,7 @@ public void persist(T entity);
 	
 	public void update(T entity);
 	
-	public T findById(Id id);
+	public T findById(Long id);
 	
 	public void delete(T entity);
 	
